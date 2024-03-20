@@ -1,11 +1,12 @@
+#Program that calculates a factorial of given number
 def fact(i):
-    if i < 0:
+    if i < 0: #We cannot give a factorial from a negative number, need to exclude it
         print ("Can't be negative")
-    else:
+    else: #Need to factor that 0 is an exception.
         if i ==0:
             return 1
         else:
-            return i * fact(i-1)
+            return i * fact(i-1) #this will make it so that every number will be multiplied by itself -1 and then go through the function again until it reaches 0, then it will return 1
 
-number = int(input ("Type a number:"))
-print("The factorial of {} is:".format(number), end=""); print(fact(number))
+number = int(input ("Type a number:")) # Ask for a input number
+print("The factorial of {} is:".format(number), end=""); print(fact(number)) #Print the resulting number
