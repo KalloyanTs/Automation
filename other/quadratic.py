@@ -1,5 +1,5 @@
 import math
-
+#Program that solves quadratic equation
 def quad_equasion(a, b, c):
     d = (b*b - (4*a*c))
     if d < 0:
