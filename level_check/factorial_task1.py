@@ -9,4 +9,4 @@ def fact(i):
             return i * fact(i-1) #this will make it so that every number will be multiplied by itself -1 and then go through the function again until it reaches 0, then it will return 1
 
 number = int(input ("Type a number:")) # Ask for a input number
-print("The factorial of {} is:".format(number), end=""); print(fact(number)) #Print the resulting number
+print(f"The factorial of {number} is:", end=""); print(fact(number)) #Print the resulting number
