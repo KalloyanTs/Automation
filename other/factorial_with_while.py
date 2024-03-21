@@ -6,4 +6,4 @@ def factorial(n):
     return i
 
 n = (int(input(f"Provide a number:")))
-print(factorial(n))
+print(f"The factorial of {n} is: ", factorial(n))
