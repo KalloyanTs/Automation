@@ -1,4 +1,7 @@
-#Program that averages the grades of studens in class
+#Task 4: Student Average Grade
+#Description : Create a dictionary to store the grades of students in a class (keys:
+#student names, values: grades). Write a function to calculate the average grade of the
+#class.
 
 class_size = int(input("How many students are there in class:"))
 list_of_names = []

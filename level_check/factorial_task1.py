@@ -1,4 +1,6 @@
-#Program that calculates a factorial of given number
+#Task 1: Number Manipulation
+#Description : Write a Python program to calculate the factorial of a given number.
+
 def fact(i):
     if i < 0: #We cannot give a factorial from a negative number, need to exclude it
         print ("Can't be negative")
