@@ -2,6 +2,9 @@
 #Description : Create a dictionary to store the grades of students in a class (keys:
 #student names, values: grades). Write a function to calculate the average grade of the
 #class.
+# I was not aware of the dictionary function, so did it with lists instead. Understood what dictionaries are and why we should use them here instead of list.
+# For this specific task it works since we do not shuffle the lists. 
+# Program using dictionary is present in the "other" folder.
 
 class_size = int(input("How many students are there in class:"))
 list_of_names = []
