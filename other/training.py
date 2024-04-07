@@ -1,6 +1,6 @@
 #Print Even-Indexed Characters from a String:
 #Accept a string from the user and display characters that are present at an even index number.
-def even_index(user_list):
+def even_index(user_list: list):
     user_string = input("Give string:")
     user_list = user_string.split()
     print(user_list[::2])
@@ -19,7 +19,7 @@ def iteration(n):
 
 #Calculate Sum and Product:
 #Given two integer numbers, return their product only if the product is equal to or lower than 1000. Otherwise, return their sum.
-def sum_and_product(a, b):
+def sum_and_product(a: int, b: int):
     c = a*b
     a = int(input("What is a: "))
     b = int(input("What is b: "))
@@ -36,7 +36,7 @@ def sum_and_product(a, b):
 #Create a program that displays the lyrics of a song.
 #file = input("File name: ")
 
-def read_file(file):
+def read_file(file: str):
     try:
         with open(file, "r") as file_content:
             contents = file_content.read()
