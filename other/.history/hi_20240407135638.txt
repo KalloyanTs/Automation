@@ -1,2 +1,0 @@
-This file is a testing file to read so it is easier than writing the whole name of the other files.
-This file includes more lines which should be seen as a new string .
