@@ -14,5 +14,5 @@ def word_counter(file):
 
 word_occurrences = word_counter(file)
 
-for i, f in word_occurrences.items():
+for i, f in word_occurrences.items(): # type: ignore
     print(f"There are {f} occurrence/s of '{i}' in {file}")
