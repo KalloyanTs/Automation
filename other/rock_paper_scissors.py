@@ -1,5 +1,4 @@
 import random
-import sys
 print("Hi, this is a rock, paper and scissors game!\nPlease give your input below\nFor short you can use: \nr for rock\np for paper\ns for scissors\n ")
 
 game_options = {
@@ -24,34 +23,18 @@ def user_choice():
 def comp_choice():
     return game_options.get(random.choice([x for x in game_options]))
 
-def winner(u_choice, c_choice):
-    outcome = ""
-    if u_choice == c_choice:
-        outcome = "It's a Tie!"
-        return outcome
-    elif u_choice == 'scissors' and c_choice == 'paper':
-        outcome = "Congratulations, you Win!"
-        return outcome
-    elif u_choice == 'scissors' and c_choice == 'rock':
-        outcome = "Sorry, you lose!"
-        return outcome
-    elif u_choice == 'rock' and c_choice == 'paper':
-        outcome = "Sorry, you lose!"
-        return outcome
-    elif u_choice == 'rock' and c_choice == 'scissors':
-        outcome = "Congratulations, you Win!"
-        return outcome
-    elif u_choice == 'paper' and c_choice == 'scissors':
-        outcome = "Sorry, you lose!"
-        return outcome
-    elif u_choice == 'paper' and c_choice == 'rock':
-        outcome = "Congratulations, you Win!"
-        return outcome
+def winner(user, computer):
+    if user == computer:
+        return "It's a Tie!"
+    elif (user == 'scissors' and computer == 'paper') or (user == 'rock' and computer == 'scissors') or (user == 'paper' and computer == 'rock'):
+        return "Congratulations, you Win!"
+    else:
+        return "Sorry, you lose!"
 
 def main():
-    u_choice = user_choice()
-    c_choice = comp_choice()
-    print(f"Your choice is: {u_choice} \n The computer rolled: {c_choice}! \n {winner(u_choice, c_choice)}")
+    user = user_choice()
+    computer = comp_choice()
+    print(f"Your choice is: {user} \n The computer rolled: {computer}! \n {winner(user, computer)}")
 
 main()
 
